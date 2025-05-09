@@ -1,0 +1,79 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Wave Hub 🟢",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Loading Client",
+   LoadingSubtitle = "by Ocean",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title =  "Test Version",
+      Subtitle = "Wave 100% Bypass ACheat",
+      Note = "Join discord for key ", -- For 3 day
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Wave_Beta"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Dead Rail", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Bypass Anti Cheat 🟠",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AmareScripts/DeadRails/refs/heads/main/Bypass%25AntiCheat.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fast Walker 🟢",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/wave-hub/refs/heads/main/Speed"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Esp Item 🟢",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/4EabqKvB"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Esp Train 🟢",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/XC9L6uhF"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Double Jump 🟢",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/0QbYRThv"))()
+   end,
+})
+local Tab = Window:CreateTab("OpBypass", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Anti Detected[Global] 🟠",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Who-Is-E/Anti-Cheat-Bypass/main/Bypass.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Admin Nameless[AT Update] 🟢",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-nameless-admin-15646"))()
+   end,
+})
