@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Wave Hub 🟢",
+   Name = "Wave Hub 🌊",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loading Client",
    LoadingSubtitle = "by Ocean",
@@ -34,46 +34,53 @@ local Window = Rayfield:CreateWindow({
 })
 local Tab = Window:CreateTab("Dead Rail", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
-   Name = "Bypass Anti Cheat 🟠",
+   Name = "Bypass Anti Cheat 🛠️",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AmareScripts/DeadRails/refs/heads/main/Bypass%25AntiCheat.lua"))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "Fast Walker 🟢",
+   Name = "Fast Walker 🏃",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/wave-hub/refs/heads/main/Speed"))()
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Esp Item 🟢",
+   Name = "Esp Item 😈",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/Esp2/refs/heads/main/Cho"))()
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Esp Train 🟢",
+   Name = "Esp Train 😈",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/Wavee/refs/heads/main/Espitem"))()
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Double Jump 🟢",
+   Name = "Double Jump 💀",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/0QbYRThv"))()
    end,
 })
 local Tab = Window:CreateTab("OpBypass", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
-   Name = "Anti Detected[Global] 🟠",
+   Name = "Anti Detected[Global] 🛠️",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Who-Is-E/Anti-Cheat-Bypass/main/Bypass.lua"))()
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Admin Nameless[AT Update] 🟢",
+   Name = "Admin Nameless[AT Update] 😎",
    Callback = function()
    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-nameless-admin-15646"))()
+   end,
+})
+local Tab = Window:CreateTab("GachaOP", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Gacha[max luck] 🌠",
+   Callback = function()
+   game.systems.player.human.luck = 9e9
    end,
 })
