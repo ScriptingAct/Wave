@@ -49,7 +49,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Esp Item 🟢",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/Wavee/refs/heads/main/Espitem"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingAct/Esp2/refs/heads/main/Cho"))()
    end,
 })
 local Button = Tab:CreateButton({
